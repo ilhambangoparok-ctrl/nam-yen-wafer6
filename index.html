@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ร้าน เวเฟอร์สติ๊กน้ำเย็น ลำใหม่ (ขายส่ง)</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f8f8f8;
+    color:#333;
+    scroll-behavior:smooth;
+}
+
+/* NAVBAR */
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#1f1f1f;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+nav h1{
+    color:#fff;
+    font-size:24px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav ul li a{
+    color:#fff;
+    text-decoration:none;
+    transition:0.3s;
+    font-size:15px;
+}
+
+nav ul li a:hover{
+    color:#d4a762;
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    background:url('โอโจ้รวม.jpg') center/cover;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:20px;
+    position:relative;
+}
+
+.hero::after{
+    content:'';
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.55);
+}
+
+.hero-content{
+    position:relative;
+    color:white;
+    z-index:2;
+}
+
+.hero-content h2{
+    font-size:60px;
+    margin-bottom:15px;
+}
+
+.hero-content p{
+    font-size:20px;
+    margin-bottom:25px;
+}
+
+.btn{
+    background:#d4a762;
+    color:#fff;
+    padding:14px 30px;
+    border-radius:50px;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#b88944;
+}
+
+/* SECTION */
+section{
+    padding:100px 10%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    font-size:38px;
+    color:#222;
+}
+
+.section-title p{
+    color:#777;
+    margin-top:10px;
+}
+
+/* ABOUT */
+.about{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:40px;
+    align-items:center;
+}
+
+.about img{
+    width:100%;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.about-text h3{
+    font-size:30px;
+    margin-bottom:20px;
+}
+
+.about-text p{
+    line-height:1.8;
+    color:#555;
+}
+
+/* MENU */
+.menu-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.menu-card{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.menu-card:hover{
+    transform:translateY(-8px);
+}
+
+.menu-card img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+}
+
+.menu-content{
+    padding:25px;
+}
+
+.menu-content h3{
+    margin-bottom:10px;
+}
+
+.price{
+    color:#d4a762;
+    font-size:22px;
+    font-weight:bold;
+}
+
+/* CONTACT */
+.contact-box{
+    background:#fff;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+    max-width:700px;
+    margin:auto;
+}
+
+.contact-box p{
+    margin:15px 0;
+    font-size:18px;
+}
+
+/* FOOTER */
+footer{
+    background:#1f1f1f;
+    color:#fff;
+    text-align:center;
+    padding:25px;
+    margin-top:50px;
+}
+
+@media(max-width:768px){
+
+.hero-content h2{
+    font-size:40px;
+}
+
+nav{
+    flex-direction:column;
+    gap:10px;
+}
+
+nav ul{
+    gap:15px;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h1>ร้าน เวเฟอร์สติ๊กน้ำเย็น ลำใหม่ (ขายส่ง)</h1>
+
+    <ul>
+        <li><a href="#home">หน้าแรก</a></li>
+        <li><a href="#about">เกี่ยวกับร้าน</a></li>
+        <li><a href="#menu">เมนู</a></li>
+        <li><a href="#contact">ติดต่อ</a></li>
+    </ul>
+</nav>
+
+<!-- PAGE 1 -->
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h2>ร้าน เวเฟอร์สติ๊กน้ำเย็น ลำใหม่ (ขายส่ง)</h2>
+        <p>ขนมเวเฟอร์แท่ง (ขายส่ง)ลูกค้าประจำ ของทานเล่นยอดนิยมของร้าน</p>
+        <a href="#menu" class="btn">ดูเมนู</a>
+    </div>
+</section>
+
+<!-- PAGE 2 -->
+<section id="about">
+
+    <div class="section-title">
+        <h2>เกี่ยวกับร้าน</h2>
+        <p>เรื่องราวและที่มาของร้าน เวเฟอร์สติ๊กน้ำเย็น ลำใหม่ (ขายส่ง)</p>
+    </div>
+
+    <div class="about">
+
+        <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=1200&auto=format&fit=crop">
+
+        <div class="about-text">
+            <h3>ต้นกำเนิดความอร่อย</h3>
+
+            <p>
+                ร้าน “เวเฟอร์สติ๊กน้ำเย็น'' ลำใหม่ (ขายส่ง)
+                ใหม่ สด กรอบ หอม รสหวาน 
+            </p>
+
+            <br>
+
+            <p>
+                จากการขัดสรรค์ของผู้เชี่ยวชาญระดับยอดเขา จนได้มีของทานเล่นให้ทุกทานได้ทานอย่างใหม่ สด กรอบ หอม รสหวาน
+                จนทุกคนต้องตอบเป็นเสียงเดียวกันว่า (คนลองแล้วจะรู้)ส่วนคนยุดหินฟังแล้วอยากลองกันมากเป็นเรื่อยๆคิดเป็นร้อยล่ะ30
+                จนกว่าจะลิ้นรส5รสที่ Special และรสชาติอื่นๆที่มาจากต้นตำรับนับสิบๆรสที่อยากให้ลองเลย 
+                ภายในร้านตกแต่งสไตล์โมเดิร์นคลีน ให้บรรยากาศอบอุ่น นั่งสบาย
+                เหมาะสำหรับพักผ่อน ทำงาน หรือพบปะเพื่อนฝูง
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PAGE 3 -->
+<section id="menu">
+
+    <div class="section-title">
+        <h2>เมนูแนะนำ</h2>
+        <p>ของทานเล่นยอดนิยมของร้าน</p>
+    </div>
+
+    <div class="menu-container">
+
+        <div class="menu-card">
+            <img src="โอโจ้ช็อก.jpg">
+
+            <div class="menu-content">
+                <h3>รสช็อกโกแลต</h3>
+                <p>ใหม่ สด กรอบ หอม รสหวาน</p>
+                <br>
+                <div class="price">10 บาท</div>
+            </div>
+        </div>
+
+        <div class="menu-card">
+            <img src="โอโจ้ลาเต้.jpg">
+
+            <div class="menu-content">
+                <h3>รสลาเต้</h3>
+                <p>ใหม่ สด กรอบ หอม รสหวาน</p>
+                <br>
+                <div class="price">10 บาท</div>
+            </div>
+        </div>
+
+        <div class="menu-card">
+            <img src="โอโจ้สตรอ.jpg">
+
+            <div class="menu-content">
+                <h3>รสสตรอเบอร์รี่</h3>
+                <p>ใหม่ สด กรอบ หอม รสหวาน</p>
+                <br>
+                <div class="price">10 บาท</div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PAGE 4 -->
+<section id="contact">
+
+    <div class="section-title">
+        <h2>ติดต่อร้าน</h2>
+        <p>สามารถติดต่อหรือสอบถามเพิ่มเติมได้</p>
+    </div>
+
+    <div class="contact-box">
+
+        <p><strong>ชื่อร้าน :</strong> ร้าน เวเฟอร์สติ๊กน้ำเย็น ลำใหม่ (ขายส่ง)</p>
+
+        <p><strong>ที่อยู่ :</strong> 10 หมู่2 ตำบลลำใหม่ อำเภอเมือง จังหวัดยะลา 95160</p>
+
+        <p><strong>เจ้าของกิจการ :</strong> นายอีลฮำ บาโงปาโระ</p>
+
+        <p><strong>เบอร์โทร :</strong> 082-1298892</p>
+
+        <p><strong>เวลาเปิด :</strong> ทุกวัน :09.00 - 16:00 น.</p>
+
+        <p><strong>Facebook :</strong> อีลฮำ บาโงปาโระ</p>
+
+    </div>
+
+</section>
+
+<footer>
+    © 2026 ร้าน เวเฟอร์สติ๊กน้ำเย็น ลำใหม่ (ขายส่ง) | All Rights Reserved
+</footer>
+
+</body>
+</html>
